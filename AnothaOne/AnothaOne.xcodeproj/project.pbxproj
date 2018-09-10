@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4FEDABD62146FA16009D49A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEDABD52146FA16009D49A0 /* AppDelegate.swift */; };
+		4FEDABD82146FA16009D49A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEDABD72146FA16009D49A0 /* ViewController.swift */; };
+		4FEDABDB2146FA16009D49A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FEDABD92146FA16009D49A0 /* Main.storyboard */; };
+		4FEDABDD2146FA18009D49A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FEDABDC2146FA18009D49A0 /* Assets.xcassets */; };
+		4FEDABE02146FA18009D49A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FEDABDE2146FA18009D49A0 /* LaunchScreen.storyboard */; };
+		4FEDABEB2146FA18009D49A0 /* AnothaOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEDABEA2146FA18009D49A0 /* AnothaOneTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4FEDABE72146FA18009D49A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FEDABCA2146FA16009D49A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FEDABD12146FA16009D49A0;
+			remoteInfo = AnothaOne;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4FEDABD22146FA16009D49A0 /* AnothaOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnothaOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FEDABD52146FA16009D49A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4FEDABD72146FA16009D49A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4FEDABDA2146FA16009D49A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4FEDABDC2146FA18009D49A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4FEDABDF2146FA18009D49A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4FEDABE12146FA18009D49A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FEDABE62146FA18009D49A0 /* AnothaOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnothaOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FEDABEA2146FA18009D49A0 /* AnothaOneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnothaOneTests.swift; sourceTree = "<group>"; };
+		4FEDABEC2146FA18009D49A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FEDABCF2146FA16009D49A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FEDABE32146FA18009D49A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FEDABC92146FA16009D49A0 = {
+			isa = PBXGroup;
+			children = (
+				4FEDABD42146FA16009D49A0 /* AnothaOne */,
+				4FEDABE92146FA18009D49A0 /* AnothaOneTests */,
+				4FEDABD32146FA16009D49A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4FEDABD32146FA16009D49A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FEDABD22146FA16009D49A0 /* AnothaOne.app */,
+				4FEDABE62146FA18009D49A0 /* AnothaOneTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FEDABD42146FA16009D49A0 /* AnothaOne */ = {
+			isa = PBXGroup;
+			children = (
+				4FEDABD52146FA16009D49A0 /* AppDelegate.swift */,
+				4FEDABD72146FA16009D49A0 /* ViewController.swift */,
+				4FEDABD92146FA16009D49A0 /* Main.storyboard */,
+				4FEDABDC2146FA18009D49A0 /* Assets.xcassets */,
+				4FEDABDE2146FA18009D49A0 /* LaunchScreen.storyboard */,
+				4FEDABE12146FA18009D49A0 /* Info.plist */,
+			);
+			path = AnothaOne;
+			sourceTree = "<group>";
+		};
+		4FEDABE92146FA18009D49A0 /* AnothaOneTests */ = {
+			isa = PBXGroup;
+			children = (
+				4FEDABEA2146FA18009D49A0 /* AnothaOneTests.swift */,
+				4FEDABEC2146FA18009D49A0 /* Info.plist */,
+			);
+			path = AnothaOneTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FEDABD12146FA16009D49A0 /* AnothaOne */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FEDABEF2146FA18009D49A0 /* Build configuration list for PBXNativeTarget "AnothaOne" */;
+			buildPhases = (
+				4FEDABCE2146FA16009D49A0 /* Sources */,
+				4FEDABCF2146FA16009D49A0 /* Frameworks */,
+				4FEDABD02146FA16009D49A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnothaOne;
+			productName = AnothaOne;
+			productReference = 4FEDABD22146FA16009D49A0 /* AnothaOne.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4FEDABE52146FA18009D49A0 /* AnothaOneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FEDABF22146FA18009D49A0 /* Build configuration list for PBXNativeTarget "AnothaOneTests" */;
+			buildPhases = (
+				4FEDABE22146FA18009D49A0 /* Sources */,
+				4FEDABE32146FA18009D49A0 /* Frameworks */,
+				4FEDABE42146FA18009D49A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FEDABE82146FA18009D49A0 /* PBXTargetDependency */,
+			);
+			name = AnothaOneTests;
+			productName = AnothaOneTests;
+			productReference = 4FEDABE62146FA18009D49A0 /* AnothaOneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FEDABCA2146FA16009D49A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = noahgomez;
+				TargetAttributes = {
+					4FEDABD12146FA16009D49A0 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					4FEDABE52146FA18009D49A0 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 4FEDABD12146FA16009D49A0;
+					};
+				};
+			};
+			buildConfigurationList = 4FEDABCD2146FA16009D49A0 /* Build configuration list for PBXProject "AnothaOne" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4FEDABC92146FA16009D49A0;
+			productRefGroup = 4FEDABD32146FA16009D49A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FEDABD12146FA16009D49A0 /* AnothaOne */,
+				4FEDABE52146FA18009D49A0 /* AnothaOneTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FEDABD02146FA16009D49A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FEDABE02146FA18009D49A0 /* LaunchScreen.storyboard in Resources */,
+				4FEDABDD2146FA18009D49A0 /* Assets.xcassets in Resources */,
+				4FEDABDB2146FA16009D49A0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FEDABE42146FA18009D49A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FEDABCE2146FA16009D49A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FEDABD82146FA16009D49A0 /* ViewController.swift in Sources */,
+				4FEDABD62146FA16009D49A0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FEDABE22146FA18009D49A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FEDABEB2146FA18009D49A0 /* AnothaOneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4FEDABE82146FA18009D49A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FEDABD12146FA16009D49A0 /* AnothaOne */;
+			targetProxy = 4FEDABE72146FA18009D49A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4FEDABD92146FA16009D49A0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FEDABDA2146FA16009D49A0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4FEDABDE2146FA18009D49A0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FEDABDF2146FA18009D49A0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FEDABED2146FA18009D49A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4FEDABEE2146FA18009D49A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4FEDABF02146FA18009D49A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JJH3LWKF55;
+				INFOPLIST_FILE = AnothaOne/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = noahgomez.AnothaOne;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4FEDABF12146FA18009D49A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JJH3LWKF55;
+				INFOPLIST_FILE = AnothaOne/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = noahgomez.AnothaOne;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		4FEDABF32146FA18009D49A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JJH3LWKF55;
+				INFOPLIST_FILE = AnothaOneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = noahgomez.AnothaOneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnothaOne.app/AnothaOne";
+			};
+			name = Debug;
+		};
+		4FEDABF42146FA18009D49A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JJH3LWKF55;
+				INFOPLIST_FILE = AnothaOneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = noahgomez.AnothaOneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnothaOne.app/AnothaOne";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FEDABCD2146FA16009D49A0 /* Build configuration list for PBXProject "AnothaOne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FEDABED2146FA18009D49A0 /* Debug */,
+				4FEDABEE2146FA18009D49A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FEDABEF2146FA18009D49A0 /* Build configuration list for PBXNativeTarget "AnothaOne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FEDABF02146FA18009D49A0 /* Debug */,
+				4FEDABF12146FA18009D49A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FEDABF22146FA18009D49A0 /* Build configuration list for PBXNativeTarget "AnothaOneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FEDABF32146FA18009D49A0 /* Debug */,
+				4FEDABF42146FA18009D49A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4FEDABCA2146FA16009D49A0 /* Project object */;
+}
