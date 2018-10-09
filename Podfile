@@ -2,18 +2,11 @@
 # platform :ios, '9.0'
 
 target 'AnothaOne' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
-
-pod 'GoogleSignIn'
-pod 'SDWebImage', '~> 4.0'
-pod 'Backendless'
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+use_frameworks!
 
   # Pods for AnothaOne
-
-  target 'AnothaOneTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+pod 'Backendless'
 
 end
+            
