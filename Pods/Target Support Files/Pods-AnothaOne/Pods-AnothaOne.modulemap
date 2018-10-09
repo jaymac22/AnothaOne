@@ -1,0 +1,6 @@
+framework module Pods_AnothaOne {
+  umbrella header "Pods-AnothaOne-umbrella.h"
+
+  export *
+  module * { export * }
+}

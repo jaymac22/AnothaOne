@@ -18,8 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let SERVER_URL = "https://api.backendless.com"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        Backendless.sharedInstance().hostURL = SERVER_URL
-        Backendless.sharedInstance().initApp(APPLICATION_ID, apiKey: API_KEY)
+        //Backendless.sharedInstance().hostURL = SERVER_URL
+        //Backendless.sharedInstance().initApp(APPLICATION_ID, apiKey: API_KEY)
         // Override point for customization after application launch.
         return true
     }
