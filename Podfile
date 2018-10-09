@@ -7,6 +7,6 @@ use_frameworks!
 
   # Pods for AnothaOne
 pod 'Backendless'
-
+pod 'GoogleSignIn'
 end
             
