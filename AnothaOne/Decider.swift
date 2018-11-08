@@ -7,25 +7,32 @@
 
 import Foundation
 
-private enum Person {
+private enum PersonWorking {
     case M,J,N
 }
 
+//CHANGE THIS VARIABLE WHEN YOU ARE WORKING
+private var personWorking: PersonWorking  = .J;
+
 class Decider: UIViewController {
-    
-    private var working: Person = .M;
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .gray
         ServerIndicator.AddIndicator()
-        switch working {
+        
+        switch personWorking {
+            
         case .M:
             (UIApplication.shared.delegate as! AppDelegate).changeRootViewController(SettingsTableViewController())
-        case .J:
-            (UIApplication.shared.delegate as! AppDelegate).changeRootViewController(HomeVC())
         case .N:
             (UIApplication.shared.delegate as! AppDelegate).changeRootViewController(GoogleLoginVC())
+            
+        case .J:
+            //THIS IS WHERE YOUR FLOW LAYOUT IS
+            let layout = UICollectionViewFlowLayout()
+            let myVC = UINavigationController(rootViewController: HomeController(collectionViewLayout: layout));
+            (UIApplication.shared.delegate as! AppDelegate).changeRootViewController(myVC)
         }
         ServerIndicator.RemoveIndicator()
     }

@@ -80,10 +80,10 @@
 			isa = PBXGroup;
 			children = (
 				0F22E1AE1E8407D1004B722A /* AppDelegate.swift */,
-				4F5D88D82183CC3A00A4A465 /* Ext.swift */,
-				4F3C17DF2194C106006D77BC /* ServerIndicator.swift */,
-				4FDB353A216D4EAA006A2A29 /* ViewControllers */,
+				4F3C17DD2194BED0006D77BC /* Decider.swift */,
+				4FDB353A216D4EAA006A2A29 /* Noah */,
 				A34744C72194C6CD00E3F4FA /* Odeh */,
+				704997882194CB66008D9A2D /* J */,
 				0F22E1B71E8407D1004B722A /* LaunchScreen.storyboard */,
 				0F22E1BA1E8407D1004B722A /* Info.plist */,
 				0F22E1B51E8407D1004B722A /* Assets.xcassets */,
@@ -91,14 +91,14 @@
 			path = AnothaOne;
 			sourceTree = "<group>";
 		};
-		4FDB353A216D4EAA006A2A29 /* ViewControllers */ = {
+		4FDB353A216D4EAA006A2A29 /* Noah */ = {
 			isa = PBXGroup;
 			children = (
-				4F3C17DD2194BED0006D77BC /* Decider.swift */,
 				4FDB3538216D4DC4006A2A29 /* GoogleLogin.swift */,
-				4F3C17E12194C187006D77BC /* Home.swift */,
+				4F5D88D82183CC3A00A4A465 /* Ext.swift */,
+				4F3C17DF2194C106006D77BC /* ServerIndicator.swift */,
 			);
-			path = ViewControllers;
+			path = Noah;
 			sourceTree = "<group>";
 		};
 		6A52C31F129574FA32E13D84 /* Pods */ = {
@@ -108,6 +108,14 @@
 				B82CA311686B9B39A4729A4B /* Pods-AnothaOne.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		704997882194CB66008D9A2D /* J */ = {
+			isa = PBXGroup;
+			children = (
+				4F3C17E12194C187006D77BC /* Home.swift */,
+			);
+			path = J;
 			sourceTree = "<group>";
 		};
 		A34744C72194C6CD00E3F4FA /* Odeh */ = {

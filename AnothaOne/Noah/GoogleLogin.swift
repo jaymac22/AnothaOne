@@ -47,12 +47,5 @@ class GoogleLoginVC: UIViewController, GIDSignInUIDelegate {
         
     }
     
-    func GoToWorkoutScreen() {
-        ServerIndicator.AddIndicator()
-        GoogleLoginVC.shared = nil;
-        (UIApplication.shared.delegate as! AppDelegate).changeRootViewController(HomeVC())
-        ServerIndicator.RemoveIndicator()
-    }
-    
 }
 
