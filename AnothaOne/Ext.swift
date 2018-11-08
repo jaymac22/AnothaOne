@@ -1,7 +1,5 @@
 import Foundation
 
-//import SDWebImage
-
 final class RoundedByHeightButton: UIButton {
     
     override func layoutSubviews() {

@@ -5,7 +5,6 @@ import GoogleSignIn
 class TMenu: UIViewController, GIDSignInUIDelegate {
     
     private static var shared: TMenu? = nil;
-    
     fileprivate let GoogleHolder = UIView.AppGeneric(background: .clear);
     fileprivate let GoogleButton = GIDSignInButton()
     
@@ -13,7 +12,6 @@ class TMenu: UIViewController, GIDSignInUIDelegate {
         super.viewDidLoad()
         
         TMenu.shared = self;
-        
         
         GIDSignIn.sharedInstance().uiDelegate = self
         GoogleButton.style = .wide

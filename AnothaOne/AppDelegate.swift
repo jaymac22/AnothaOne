@@ -1,12 +1,9 @@
 
 import UIKit
 
-
 import GoogleSignIn
 
 var backendless: Backendless { return Backendless.sharedInstance() }
-
-let UserLocation: CLLocationManager = CLLocationManager()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
@@ -27,8 +24,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        
-        
         backendless.hostURL = AppDelegate.API_URL
         backendless.initApp(AppDelegate.APP_ID, apiKey: AppDelegate.IOS_API)
         
@@ -39,9 +34,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         window?.rootViewController = LoginVC()
-        
-        UserLocation.activityType = .fitness
-        UserLocation.allowsBackgroundLocationUpdates = true;
         
         return true
     }
@@ -60,8 +52,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!,
               withError error: Error!) {
         backendless.userService.logout()
-        // Perform any operations when the user disconnects from app here.
-        // ...
     }
     
 }

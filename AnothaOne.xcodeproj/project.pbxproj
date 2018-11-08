@@ -84,8 +84,8 @@
 		4FDB353A216D4EAA006A2A29 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				4FDB3538216D4DC4006A2A29 /* LoginPage.swift */,
 				4F5D88D62183CBE200A4A465 /* TMenu.swift */,
+				4FDB3538216D4DC4006A2A29 /* LoginPage.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
