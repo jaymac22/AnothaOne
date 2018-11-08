@@ -10,6 +10,8 @@
 		0F22E1AF1E8407D1004B722A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F22E1AE1E8407D1004B722A /* AppDelegate.swift */; };
 		0F22E1B61E8407D1004B722A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F22E1B51E8407D1004B722A /* Assets.xcassets */; };
 		0F22E1B91E8407D1004B722A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F22E1B71E8407D1004B722A /* LaunchScreen.storyboard */; };
+		4F5D88D72183CBE200A4A465 /* TMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5D88D62183CBE200A4A465 /* TMenu.swift */; };
+		4F5D88D92183CC3A00A4A465 /* Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5D88D82183CC3A00A4A465 /* Ext.swift */; };
 		4FDB3539216D4DC4006A2A29 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDB3538216D4DC4006A2A29 /* LoginPage.swift */; };
 		E05B0F89A8C40B861BAB4BAF /* Pods_AnothaOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AEF8A315CE65E1A9A118278 /* Pods_AnothaOne.framework */; };
 /* End PBXBuildFile section */
@@ -20,6 +22,8 @@
 		0F22E1B51E8407D1004B722A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F22E1B81E8407D1004B722A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F22E1BA1E8407D1004B722A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F5D88D62183CBE200A4A465 /* TMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMenu.swift; sourceTree = "<group>"; };
+		4F5D88D82183CC3A00A4A465 /* Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ext.swift; sourceTree = "<group>"; };
 		4FDB3538216D4DC4006A2A29 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		55D57DB51CD7C7CCEDDAA534 /* Pods-AnothaOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnothaOne.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnothaOne/Pods-AnothaOne.debug.xcconfig"; sourceTree = "<group>"; };
 		9AEF8A315CE65E1A9A118278 /* Pods_AnothaOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnothaOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				0F22E1AE1E8407D1004B722A /* AppDelegate.swift */,
+				4F5D88D82183CC3A00A4A465 /* Ext.swift */,
 				4FDB353A216D4EAA006A2A29 /* ViewControllers */,
 				0F22E1B71E8407D1004B722A /* LaunchScreen.storyboard */,
 				0F22E1BA1E8407D1004B722A /* Info.plist */,
@@ -80,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				4FDB3538216D4DC4006A2A29 /* LoginPage.swift */,
+				4F5D88D62183CBE200A4A465 /* TMenu.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -229,7 +235,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FDB3539216D4DC4006A2A29 /* LoginPage.swift in Sources */,
+				4F5D88D92183CC3A00A4A465 /* Ext.swift in Sources */,
 				0F22E1AF1E8407D1004B722A /* AppDelegate.swift in Sources */,
+				4F5D88D72183CBE200A4A465 /* TMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
