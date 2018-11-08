@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.rootViewController = LoginVC()
+        window?.rootViewController = Decider()
         
         return true
     }
@@ -46,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             dump(error)
             return;
         }
-        TMenu.didSignInWithGoogleUser(user: user)
+        GoogleLoginVC.didSignInWithGoogleUser(user: user)
     }
     
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!,
@@ -54,5 +54,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         backendless.userService.logout()
     }
     
+    
+    func changeRootViewController(_ ToController : UIViewController) {
+        //Custom function to change root window
+        let desiredViewController = ToController
+        DispatchQueue.main.async {
+            let snapshot:UIView = (self.window?.snapshotView(afterScreenUpdates: true))!
+            desiredViewController.view.addSubview(snapshot);
+            self.window?.rootViewController = desiredViewController;
+            UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseInOut, animations: {
+                snapshot.layer.opacity = 0;
+                //snapshot.layer.transform = CATransform3DMakeScale(1, 1, 1);
+            }, completion: { (value: Bool) in
+                snapshot.removeFromSuperview();
+            })
+        }
+        
+    }
 }
 
