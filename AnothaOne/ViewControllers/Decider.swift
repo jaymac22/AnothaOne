@@ -21,7 +21,7 @@ class Decider: UIViewController {
         ServerIndicator.AddIndicator()
         switch working {
         case .M:
-            (UIApplication.shared.delegate as! AppDelegate).changeRootViewController(GoogleLoginVC())
+            (UIApplication.shared.delegate as! AppDelegate).changeRootViewController(SettingsTableViewController())
         case .J:
             (UIApplication.shared.delegate as! AppDelegate).changeRootViewController(HomeVC())
         case .N:
