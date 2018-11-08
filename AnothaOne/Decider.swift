@@ -12,7 +12,7 @@ private enum PersonWorking {
 }
 
 //CHANGE THIS VARIABLE WHEN YOU ARE WORKING
-private var personWorking: PersonWorking  = .J;
+private var personWorking: PersonWorking  = .N;
 
 class Decider: UIViewController {
     
@@ -27,7 +27,6 @@ class Decider: UIViewController {
             (UIApplication.shared.delegate as! AppDelegate).changeRootViewController(SettingsTableViewController())
         case .N:
             (UIApplication.shared.delegate as! AppDelegate).changeRootViewController(GoogleLoginVC())
-            
         case .J:
             //THIS IS WHERE YOUR FLOW LAYOUT IS
             let layout = UICollectionViewFlowLayout()

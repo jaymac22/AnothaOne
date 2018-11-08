@@ -21,6 +21,16 @@ extension UIAlertController {
         return alert
     }
 }
+extension UIImageView {
+    static func AppBasic(image: UIImage?, contentMode: UIViewContentMode, rounded: Bool = false) -> UIImageView {
+        let imageView = (rounded ? RoundedByHeightImageView() : UIImageView())
+        imageView.translatesAutoresizingMaskIntoConstraints = false;
+        imageView.clipsToBounds = true;
+        imageView.image = image
+        imageView.contentMode = contentMode
+        return imageView
+    }
+}
 
 extension UICollectionView {
     
@@ -172,3 +182,5 @@ extension UIView {
     
 }
 
+extension UIColor {
+}
