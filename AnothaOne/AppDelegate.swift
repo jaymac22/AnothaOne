@@ -16,11 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     
     //App Keys & ID's
     static private let API_URL = "https://api.backendless.com"
-    static private let APP_ID = "EB0B9661-93E1-23D1-FFEE-25DB85DF8100"
-    static private let IOS_API = "C05C5319-987F-4E8C-FF15-327EFD9D1900"
-    static private let REST_API = "F79A3D56-5493-B314-FFD6-0A09528AAC00"
+    static private let APP_ID = "0755D83A-0AE7-EE32-FF9F-F4C86A875200"
+    static private let IOS_API = "496F6BA2-9D71-7F11-FFE4-9729E76D1C00"
+    static private let REST_API = "42515608-86B4-E758-FFA6-1C17374FD100"
     
-    static private let GoogleSignIn_KEY = "593716154431-agaubq4jb3tjvfaoiden777j28ianofd"
+    static private let GoogleSignIn_KEY = "649839761633-hldb7ntuoggmos9o30uqp1j9neablg4c"
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
