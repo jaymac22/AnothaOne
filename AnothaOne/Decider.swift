@@ -12,7 +12,7 @@ private enum PersonWorking {
 }
 
 //CHANGE THIS VARIABLE WHEN YOU ARE WORKING
-private var personWorking: PersonWorking  = .J;
+private var personWorking: PersonWorking  = .M;
 
 class Decider: UIViewController {
     
