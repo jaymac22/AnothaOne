@@ -17,7 +17,7 @@
 		4FDB3539216D4DC4006A2A29 /* GoogleLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDB3538216D4DC4006A2A29 /* GoogleLogin.swift */; };
 		A34744CB2194C72600E3F4FA /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A34744CA2194C72600E3F4FA /* Settings.storyboard */; };
 		A34744CD2194C77200E3F4FA /* SettingsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34744CC2194C77200E3F4FA /* SettingsFile.swift */; };
-		E05B0F89A8C40B861BAB4BAF /* Pods_AnothaOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AEF8A315CE65E1A9A118278 /* Pods_AnothaOne.framework */; };
+		A901CE3BB4E5EC4570E46582 /* Pods_AnothaOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305C9073F9966393624AA18A /* Pods_AnothaOne.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,16 +26,16 @@
 		0F22E1B51E8407D1004B722A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F22E1B81E8407D1004B722A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F22E1BA1E8407D1004B722A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		305C9073F9966393624AA18A /* Pods_AnothaOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnothaOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F3C17DD2194BED0006D77BC /* Decider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decider.swift; sourceTree = "<group>"; };
 		4F3C17DF2194C106006D77BC /* ServerIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerIndicator.swift; sourceTree = "<group>"; };
 		4F3C17E12194C187006D77BC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		4F5D88D82183CC3A00A4A465 /* Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ext.swift; sourceTree = "<group>"; };
 		4FDB3538216D4DC4006A2A29 /* GoogleLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLogin.swift; sourceTree = "<group>"; };
-		55D57DB51CD7C7CCEDDAA534 /* Pods-AnothaOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnothaOne.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnothaOne/Pods-AnothaOne.debug.xcconfig"; sourceTree = "<group>"; };
-		9AEF8A315CE65E1A9A118278 /* Pods_AnothaOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnothaOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77352C83B1B70292A316ACDA /* Pods-AnothaOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnothaOne.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnothaOne/Pods-AnothaOne.release.xcconfig"; sourceTree = "<group>"; };
+		91792C48F3FA14800F831874 /* Pods-AnothaOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnothaOne.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnothaOne/Pods-AnothaOne.debug.xcconfig"; sourceTree = "<group>"; };
 		A34744CA2194C72600E3F4FA /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		A34744CC2194C77200E3F4FA /* SettingsFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsFile.swift; sourceTree = "<group>"; };
-		B82CA311686B9B39A4729A4B /* Pods-AnothaOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnothaOne.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnothaOne/Pods-AnothaOne.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,28 +43,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E05B0F89A8C40B861BAB4BAF /* Pods_AnothaOne.framework in Frameworks */,
+				A901CE3BB4E5EC4570E46582 /* Pods_AnothaOne.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0AC075FD34E0B4F71F594FFA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9AEF8A315CE65E1A9A118278 /* Pods_AnothaOne.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		0F22E1A21E8407D1004B722A = {
 			isa = PBXGroup;
 			children = (
 				0F22E1AD1E8407D1004B722A /* AnothaOne */,
 				0F22E1AC1E8407D1004B722A /* Products */,
-				0AC075FD34E0B4F71F594FFA /* Frameworks */,
-				6A52C31F129574FA32E13D84 /* Pods */,
+				2533E33B3AEE37DB2BA958D2 /* Pods */,
+				B938D7DADA3F6860B2E6B5EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +83,15 @@
 			path = AnothaOne;
 			sourceTree = "<group>";
 		};
+		2533E33B3AEE37DB2BA958D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91792C48F3FA14800F831874 /* Pods-AnothaOne.debug.xcconfig */,
+				77352C83B1B70292A316ACDA /* Pods-AnothaOne.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4FDB353A216D4EAA006A2A29 /* Noah */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,15 +100,6 @@
 				4F3C17DF2194C106006D77BC /* ServerIndicator.swift */,
 			);
 			path = Noah;
-			sourceTree = "<group>";
-		};
-		6A52C31F129574FA32E13D84 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				55D57DB51CD7C7CCEDDAA534 /* Pods-AnothaOne.debug.xcconfig */,
-				B82CA311686B9B39A4729A4B /* Pods-AnothaOne.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		704997882194CB66008D9A2D /* J */ = {
@@ -127,6 +119,14 @@
 			path = Odeh;
 			sourceTree = "<group>";
 		};
+		B938D7DADA3F6860B2E6B5EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				305C9073F9966393624AA18A /* Pods_AnothaOne.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,12 +134,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F22E1BD1E8407D1004B722A /* Build configuration list for PBXNativeTarget "AnothaOne" */;
 			buildPhases = (
-				5C79AE65ADA4BF0429C12F79 /* [CP] Check Pods Manifest.lock */,
+				BA4C522DA4CAAE1211BFF7A4 /* [CP] Check Pods Manifest.lock */,
 				0F22E1A71E8407D1004B722A /* Sources */,
 				0F22E1A81E8407D1004B722A /* Frameworks */,
 				0F22E1A91E8407D1004B722A /* Resources */,
-				5E832F97B9AFB988D5336C7B /* [CP] Embed Pods Frameworks */,
-				6356321FEC632A1C45C894D8 /* [CP] Copy Pods Resources */,
+				FF32351E8D4651526D4134D7 /* [CP] Embed Pods Frameworks */,
+				EDA1E5F9D652A8042A51D7D1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,7 +198,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5C79AE65ADA4BF0429C12F79 /* [CP] Check Pods Manifest.lock */ = {
+		BA4C522DA4CAAE1211BFF7A4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -216,7 +216,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5E832F97B9AFB988D5336C7B /* [CP] Embed Pods Frameworks */ = {
+		EDA1E5F9D652A8042A51D7D1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AnothaOne/Pods-AnothaOne-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnothaOne/Pods-AnothaOne-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF32351E8D4651526D4134D7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -236,24 +254,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnothaOne/Pods-AnothaOne-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6356321FEC632A1C45C894D8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-AnothaOne/Pods-AnothaOne-resources.sh",
-				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnothaOne/Pods-AnothaOne-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -398,7 +398,7 @@
 		};
 		0F22E1BE1E8407D1004B722A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55D57DB51CD7C7CCEDDAA534 /* Pods-AnothaOne.debug.xcconfig */;
+			baseConfigurationReference = 91792C48F3FA14800F831874 /* Pods-AnothaOne.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JJH3LWKF55;
@@ -415,7 +415,7 @@
 		};
 		0F22E1BF1E8407D1004B722A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B82CA311686B9B39A4729A4B /* Pods-AnothaOne.release.xcconfig */;
+			baseConfigurationReference = 77352C83B1B70292A316ACDA /* Pods-AnothaOne.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JJH3LWKF55;
