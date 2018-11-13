@@ -24,7 +24,10 @@ class Decider: UIViewController {
         switch personWorking {
             
         case .M:
-            (UIApplication.shared.delegate as! AppDelegate).changeRootViewController(SettingsTableViewController())
+            let storyboard = UIStoryboard(name: "Settings", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "SettingsStoryBoardID") as! SettingsTableViewController
+            (UIApplication.shared.delegate as! AppDelegate).changeRootViewController(controller)
+            //(UIApplication.shared.delegate as! AppDelegate).changeRootViewController(SettingsTableViewController())
         case .N:
             (UIApplication.shared.delegate as! AppDelegate).changeRootViewController(GoogleLoginVC())
         case .J:
