@@ -17,7 +17,7 @@
 		4FDB3539216D4DC4006A2A29 /* GoogleLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDB3538216D4DC4006A2A29 /* GoogleLogin.swift */; };
 		A34744CB2194C72600E3F4FA /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A34744CA2194C72600E3F4FA /* Settings.storyboard */; };
 		A34744CD2194C77200E3F4FA /* SettingsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34744CC2194C77200E3F4FA /* SettingsFile.swift */; };
-		A901CE3BB4E5EC4570E46582 /* Pods_AnothaOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305C9073F9966393624AA18A /* Pods_AnothaOne.framework */; };
+		F3CF62B43874CF179B2D7DBC /* Pods_AnothaOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B197C8E29BD6FC835086F37 /* Pods_AnothaOne.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,14 +26,14 @@
 		0F22E1B51E8407D1004B722A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F22E1B81E8407D1004B722A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F22E1BA1E8407D1004B722A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		305C9073F9966393624AA18A /* Pods_AnothaOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnothaOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F4F60E7D136DA722C201FD5 /* Pods-AnothaOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnothaOne.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnothaOne/Pods-AnothaOne.release.xcconfig"; sourceTree = "<group>"; };
+		4B197C8E29BD6FC835086F37 /* Pods_AnothaOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnothaOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F3C17DD2194BED0006D77BC /* Decider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decider.swift; sourceTree = "<group>"; };
 		4F3C17DF2194C106006D77BC /* ServerIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerIndicator.swift; sourceTree = "<group>"; };
 		4F3C17E12194C187006D77BC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		4F5D88D82183CC3A00A4A465 /* Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ext.swift; sourceTree = "<group>"; };
 		4FDB3538216D4DC4006A2A29 /* GoogleLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLogin.swift; sourceTree = "<group>"; };
-		77352C83B1B70292A316ACDA /* Pods-AnothaOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnothaOne.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnothaOne/Pods-AnothaOne.release.xcconfig"; sourceTree = "<group>"; };
-		91792C48F3FA14800F831874 /* Pods-AnothaOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnothaOne.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnothaOne/Pods-AnothaOne.debug.xcconfig"; sourceTree = "<group>"; };
+		58C92E61C588496BA1415741 /* Pods-AnothaOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnothaOne.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnothaOne/Pods-AnothaOne.debug.xcconfig"; sourceTree = "<group>"; };
 		A34744CA2194C72600E3F4FA /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		A34744CC2194C77200E3F4FA /* SettingsFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -43,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A901CE3BB4E5EC4570E46582 /* Pods_AnothaOne.framework in Frameworks */,
+				F3CF62B43874CF179B2D7DBC /* Pods_AnothaOne.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,8 +55,8 @@
 			children = (
 				0F22E1AD1E8407D1004B722A /* AnothaOne */,
 				0F22E1AC1E8407D1004B722A /* Products */,
-				2533E33B3AEE37DB2BA958D2 /* Pods */,
-				B938D7DADA3F6860B2E6B5EA /* Frameworks */,
+				719FC147A4D11198BBA261B7 /* Pods */,
+				B21BD51326DB82780E74D5F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,15 +83,6 @@
 			path = AnothaOne;
 			sourceTree = "<group>";
 		};
-		2533E33B3AEE37DB2BA958D2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				91792C48F3FA14800F831874 /* Pods-AnothaOne.debug.xcconfig */,
-				77352C83B1B70292A316ACDA /* Pods-AnothaOne.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		4FDB353A216D4EAA006A2A29 /* Noah */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +101,15 @@
 			path = J;
 			sourceTree = "<group>";
 		};
+		719FC147A4D11198BBA261B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58C92E61C588496BA1415741 /* Pods-AnothaOne.debug.xcconfig */,
+				3F4F60E7D136DA722C201FD5 /* Pods-AnothaOne.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A34744C72194C6CD00E3F4FA /* Odeh */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,10 +119,10 @@
 			path = Odeh;
 			sourceTree = "<group>";
 		};
-		B938D7DADA3F6860B2E6B5EA /* Frameworks */ = {
+		B21BD51326DB82780E74D5F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				305C9073F9966393624AA18A /* Pods_AnothaOne.framework */,
+				4B197C8E29BD6FC835086F37 /* Pods_AnothaOne.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -134,12 +134,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F22E1BD1E8407D1004B722A /* Build configuration list for PBXNativeTarget "AnothaOne" */;
 			buildPhases = (
-				BA4C522DA4CAAE1211BFF7A4 /* [CP] Check Pods Manifest.lock */,
+				7728026B9C92A9A126829279 /* [CP] Check Pods Manifest.lock */,
 				0F22E1A71E8407D1004B722A /* Sources */,
 				0F22E1A81E8407D1004B722A /* Frameworks */,
 				0F22E1A91E8407D1004B722A /* Resources */,
-				FF32351E8D4651526D4134D7 /* [CP] Embed Pods Frameworks */,
-				EDA1E5F9D652A8042A51D7D1 /* [CP] Copy Pods Resources */,
+				9B81439BD563CCF5E44E3CFC /* [CP] Embed Pods Frameworks */,
+				4C51D4020D2658E199DFB8D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,25 +198,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		BA4C522DA4CAAE1211BFF7A4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AnothaOne-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EDA1E5F9D652A8042A51D7D1 /* [CP] Copy Pods Resources */ = {
+		4C51D4020D2658E199DFB8D9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -234,7 +216,25 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnothaOne/Pods-AnothaOne-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FF32351E8D4651526D4134D7 /* [CP] Embed Pods Frameworks */ = {
+		7728026B9C92A9A126829279 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnothaOne-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B81439BD563CCF5E44E3CFC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -398,7 +398,7 @@
 		};
 		0F22E1BE1E8407D1004B722A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91792C48F3FA14800F831874 /* Pods-AnothaOne.debug.xcconfig */;
+			baseConfigurationReference = 58C92E61C588496BA1415741 /* Pods-AnothaOne.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JJH3LWKF55;
@@ -415,7 +415,7 @@
 		};
 		0F22E1BF1E8407D1004B722A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77352C83B1B70292A316ACDA /* Pods-AnothaOne.release.xcconfig */;
+			baseConfigurationReference = 3F4F60E7D136DA722C201FD5 /* Pods-AnothaOne.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JJH3LWKF55;

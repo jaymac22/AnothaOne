@@ -940,7 +940,7 @@ NSData * GTM_NULLABLE_TYPE GTMDataFromInputStream(NSInputStream *inputStream, NS
       // Callback from test block.
       if (response == nil && responseData == nil && error == nil) {
         // Assume the fetcher should execute rather than be tested.
-          self->_testBlock = nil;
+        _testBlock = nil;
         _isUsingTestBlock = NO;
         [_sessionTask resume];
         return;
@@ -2353,7 +2353,7 @@ didReceiveChallenge:(NSURLAuthenticationChallenge *)challenge
   if (callbackQueue) {
     dispatch_group_async(_callbackGroup, callbackQueue, ^{
         if (!afterStopped) {
-            NSDate *serviceStoppedAllDate = [_service stoppedAllFetchersDate];
+          NSDate *serviceStoppedAllDate = [_service stoppedAllFetchersDate];
 
           @synchronized(self) {
             GTMSessionMonitorSynchronized(self);
