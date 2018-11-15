@@ -23,7 +23,10 @@
                                     <constraint firstAttribute="height" constant="64" id="1yT-Tc-GgK"/>
                                     <constraint firstAttribute="width" constant="128" id="Xxz-0a-Rla"/>
                                 </constraints>
-                                <state key="normal" title="API 1"/>
+                                <state key="normal" title="get my events"/>
+                                <connections>
+                                    <action selector="getMyEvents:" destination="8jB-Ne-DlS" eventType="touchUpInside" id="WgP-aM-UJc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T77-fY-YcR">
                                 <rect key="frame" x="123" y="84" width="128" height="64"/>
@@ -31,7 +34,7 @@
                                     <constraint firstAttribute="width" constant="128" id="1O7-oT-xog"/>
                                     <constraint firstAttribute="height" constant="64" id="Vkk-zx-4Hk"/>
                                 </constraints>
-                                <state key="normal" title="API 1"/>
+                                <state key="normal" title="tester"/>
                                 <connections>
                                     <action selector="didClickOne:" destination="8jB-Ne-DlS" eventType="touchUpInside" id="dxn-IV-XgX"/>
                                 </connections>
@@ -42,18 +45,18 @@
                                     <constraint firstAttribute="width" constant="128" id="fGd-KW-QSM"/>
                                     <constraint firstAttribute="height" constant="64" id="jcw-ua-jEx"/>
                                 </constraints>
-                                <state key="normal" title="API 1"/>
+                                <state key="normal" title="post an event"/>
                                 <connections>
                                     <action selector="didClickTwo:" destination="8jB-Ne-DlS" eventType="touchUpInside" id="5GR-0z-pUh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="388-QQ-vj4">
-                                <rect key="frame" x="123" y="228" width="128" height="64"/>
+                                <rect key="frame" x="59" y="228" width="256" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="IWx-7a-i4Z"/>
-                                    <constraint firstAttribute="width" constant="128" id="LoN-3c-pwL"/>
+                                    <constraint firstAttribute="width" constant="256" id="LoN-3c-pwL"/>
                                 </constraints>
-                                <state key="normal" title="API 1"/>
+                                <state key="normal" title="get featured events"/>
                                 <connections>
                                     <action selector="didClickThree:" destination="8jB-Ne-DlS" eventType="touchUpInside" id="RdO-Ye-4i5"/>
                                 </connections>
@@ -64,9 +67,21 @@
                                     <constraint firstAttribute="width" constant="128" id="YUz-kJ-Z8v"/>
                                     <constraint firstAttribute="height" constant="64" id="lrb-NE-cZf"/>
                                 </constraints>
-                                <state key="normal" title="API 1"/>
+                                <state key="normal" title="submit response"/>
                                 <connections>
                                     <action selector="didClickFive:" destination="8jB-Ne-DlS" eventType="touchUpInside" id="G7u-Gx-YYY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwF-1D-SyT">
+                                <rect key="frame" x="123" y="444" width="128" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="LQI-8r-Slb"/>
+                                    <constraint firstAttribute="width" constant="128" id="PKT-Hx-JgB"/>
+                                </constraints>
+                                <state key="normal" title="delete account"/>
+                                <connections>
+                                    <action selector="deleteAccount:" destination="8jB-Ne-DlS" eventType="touchUpInside" id="u3v-oC-Bmc"/>
+                                    <action selector="didClickFive:" destination="8jB-Ne-DlS" eventType="touchUpInside" id="mWC-vg-qYV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -76,9 +91,11 @@
                             <constraint firstItem="4g6-zv-8fl" firstAttribute="centerX" secondItem="436-ef-Wcb" secondAttribute="centerX" id="JLC-dq-LpE"/>
                             <constraint firstItem="D5b-zF-r5Z" firstAttribute="top" secondItem="5Mu-iZ-THW" secondAttribute="bottom" constant="8" id="Owm-Dl-Fgg"/>
                             <constraint firstItem="T77-fY-YcR" firstAttribute="centerX" secondItem="436-ef-Wcb" secondAttribute="centerX" id="XLL-FK-pkl"/>
+                            <constraint firstItem="pwF-1D-SyT" firstAttribute="top" secondItem="D5b-zF-r5Z" secondAttribute="bottom" constant="8" id="gCS-0h-QLn"/>
                             <constraint firstItem="388-QQ-vj4" firstAttribute="top" secondItem="4g6-zv-8fl" secondAttribute="bottom" constant="8" id="lVG-BE-c8o"/>
                             <constraint firstItem="D5b-zF-r5Z" firstAttribute="centerX" secondItem="436-ef-Wcb" secondAttribute="centerX" id="lwy-Nt-CsI"/>
                             <constraint firstItem="T77-fY-YcR" firstAttribute="top" secondItem="bF6-ft-B4I" secondAttribute="top" constant="64" id="oOx-aL-C7r"/>
+                            <constraint firstItem="pwF-1D-SyT" firstAttribute="centerX" secondItem="436-ef-Wcb" secondAttribute="centerX" id="raU-nV-5cL"/>
                             <constraint firstItem="5Mu-iZ-THW" firstAttribute="centerX" secondItem="436-ef-Wcb" secondAttribute="centerX" id="wG2-3E-Pfo"/>
                             <constraint firstItem="5Mu-iZ-THW" firstAttribute="top" secondItem="388-QQ-vj4" secondAttribute="bottom" constant="8" id="wJa-CI-u6W"/>
                             <constraint firstItem="4g6-zv-8fl" firstAttribute="top" secondItem="T77-fY-YcR" secondAttribute="bottom" constant="8" id="ylZ-pu-fxL"/>
