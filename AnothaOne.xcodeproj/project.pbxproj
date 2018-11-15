@@ -15,6 +15,8 @@
 		4F3C17E22194C187006D77BC /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3C17E12194C187006D77BC /* Home.swift */; };
 		4F5D88D92183CC3A00A4A465 /* Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5D88D82183CC3A00A4A465 /* Ext.swift */; };
 		4FDB3539216D4DC4006A2A29 /* GoogleLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDB3538216D4DC4006A2A29 /* GoogleLogin.swift */; };
+		4FF0A75C219DDAC5008E3150 /* API.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FF0A75B219DDAC5008E3150 /* API.storyboard */; };
+		4FF0A75E219DDACF008E3150 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF0A75D219DDACF008E3150 /* API.swift */; };
 		A34744CB2194C72600E3F4FA /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A34744CA2194C72600E3F4FA /* Settings.storyboard */; };
 		A34744CD2194C77200E3F4FA /* SettingsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34744CC2194C77200E3F4FA /* SettingsFile.swift */; };
 		F3CF62B43874CF179B2D7DBC /* Pods_AnothaOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B197C8E29BD6FC835086F37 /* Pods_AnothaOne.framework */; };
@@ -33,6 +35,8 @@
 		4F3C17E12194C187006D77BC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		4F5D88D82183CC3A00A4A465 /* Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ext.swift; sourceTree = "<group>"; };
 		4FDB3538216D4DC4006A2A29 /* GoogleLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLogin.swift; sourceTree = "<group>"; };
+		4FF0A75B219DDAC5008E3150 /* API.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = API.storyboard; sourceTree = "<group>"; };
+		4FF0A75D219DDACF008E3150 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		58C92E61C588496BA1415741 /* Pods-AnothaOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnothaOne.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnothaOne/Pods-AnothaOne.debug.xcconfig"; sourceTree = "<group>"; };
 		A34744CA2194C72600E3F4FA /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		A34744CC2194C77200E3F4FA /* SettingsFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsFile.swift; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				4FDB3538216D4DC4006A2A29 /* GoogleLogin.swift */,
+				4FF0A75B219DDAC5008E3150 /* API.storyboard */,
+				4FF0A75D219DDACF008E3150 /* API.swift */,
 				4F5D88D82183CC3A00A4A465 /* Ext.swift */,
 				4F3C17DF2194C106006D77BC /* ServerIndicator.swift */,
 			);
@@ -192,6 +198,7 @@
 				A34744CB2194C72600E3F4FA /* Settings.storyboard in Resources */,
 				0F22E1B91E8407D1004B722A /* LaunchScreen.storyboard in Resources */,
 				0F22E1B61E8407D1004B722A /* Assets.xcassets in Resources */,
+				4FF0A75C219DDAC5008E3150 /* API.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +276,7 @@
 				4F3C17E02194C106006D77BC /* ServerIndicator.swift in Sources */,
 				4F3C17DE2194BED0006D77BC /* Decider.swift in Sources */,
 				4F3C17E22194C187006D77BC /* Home.swift in Sources */,
+				4FF0A75E219DDACF008E3150 /* API.swift in Sources */,
 				A34744CD2194C77200E3F4FA /* SettingsFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

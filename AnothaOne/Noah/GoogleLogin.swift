@@ -61,9 +61,9 @@ class GoogleLoginVC: UIViewController, GIDSignInUIDelegate {
     
     func didLogin(withUser user: BackendlessUser, GoogleLogin: Bool = false) {
         print("DID LOGING")
-        let storyboard = UIStoryboard(name: "Settings", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "SettingsStoryBoardID") as! SettingsTableViewController
-        (UIApplication.shared.delegate as! AppDelegate).changeRootViewController(controller)
+        //let controller = UIStoryboard(name: "Settings", bundle: nil).instantiateViewController(withIdentifier: "SettingsStoryBoardID") as! SettingsTableViewController
+        let cc = UIStoryboard(name: "API", bundle: nil).instantiateViewController(withIdentifier: "APIID") as! APIVC
+        (UIApplication.shared.delegate as! AppDelegate).changeRootViewController(cc)
         ServerIndicator.RemoveIndicator()
     }
     
