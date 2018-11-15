@@ -8,6 +8,19 @@ class Person: NSObject {
     var ddd: NSDate = NSDate()
 }
 
+class Event: NSObject {
+    var locationString: String = "here"
+    var time : NSDate = NSDate()
+    var title: String = "Title"
+    var location: String?
+    var responses: [Responses] = []
+}
+
+class Responses: NSObject {
+    var attending: Int = 0;
+    var users: [BackendlessUser] = []
+}
+
 extension UIViewController {
     func ShowOkAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -18,7 +31,7 @@ extension UIViewController {
 
 class APIVC: UIViewController {
     
-    var serviceName = "test"
+    var serviceName = "production"
     let APINames = ["ccnn","postEvent", "getAllEvents", "getMyEvents","submitResponse","deleteAccount"]
     var p = Person()
     
@@ -47,10 +60,14 @@ class APIVC: UIViewController {
     
     @IBAction func didClickTwo(_ sender: Any) {
         let methodName = APINames[1]
-        backendless.customService.invoke(serviceName, method: methodName, args: [0, p], response: { (resp) in
+        
+        let e = Event()
+        
+        backendless.customService.invoke(serviceName, method: methodName, args: [e], response: { (resp) in
+            
             
             guard let GoodResponse = resp as? [String : Any] else {
-                self.ShowOkAlert(title: "No Response Found", message: "")
+                self.ShowOkAlert(title: "Reso", message: (resp as? String) ?? "error")
                 return;
             }
             
@@ -64,10 +81,10 @@ class APIVC: UIViewController {
     
     @IBAction func didClickThree(_ sender: Any) {
         let methodName = APINames[2]
-        backendless.customService.invoke(serviceName, method: methodName, args: [0, p], response: { (resp) in
+        backendless.customService.invoke(serviceName, method: methodName, args: nil, response: { (resp) in
             
             guard let GoodResponse = resp as? [String : Any] else {
-                self.ShowOkAlert(title: "No Response Found", message: "")
+                self.ShowOkAlert(title: "Reso", message: (resp as? String) ?? "error")
                 return;
             }
             
@@ -80,10 +97,10 @@ class APIVC: UIViewController {
     }
     @IBAction func didClickFive(_ sender: Any) {
         let methodName = APINames[4]
-        backendless.customService.invoke(serviceName, method: methodName, args: [0, p], response: { (resp) in
+        backendless.customService.invoke(serviceName, method: methodName, args: [false], response: { (resp) in
             
             guard let GoodResponse = resp as? [String : Any] else {
-                self.ShowOkAlert(title: "No Response Found", message: "")
+                self.ShowOkAlert(title: "Reso", message: (resp as? String) ?? "error")
                 return;
             }
             
@@ -96,10 +113,10 @@ class APIVC: UIViewController {
     }
     @IBAction func deleteAccount(_ sender: Any) {
         let methodName = APINames[5]
-        backendless.customService.invoke(serviceName, method: methodName, args: [0, p], response: { (resp) in
+        backendless.customService.invoke(serviceName, method: methodName, args: nil, response: { (resp) in
             
             guard let GoodResponse = resp as? [String : Any] else {
-                self.ShowOkAlert(title: "No Response Found", message: "")
+                self.ShowOkAlert(title: "Reso", message: (resp as? String) ?? "error")
                 return;
             }
             
@@ -113,10 +130,10 @@ class APIVC: UIViewController {
     
     @IBAction func getMyEvents(_ sender: Any) {
         let methodName = APINames[3]
-        backendless.customService.invoke(serviceName, method: methodName, args: [0, p], response: { (resp) in
+        backendless.customService.invoke(serviceName, method: methodName, args: nil, response: { (resp) in
             
             guard let GoodResponse = resp as? [String : Any] else {
-                self.ShowOkAlert(title: "No Response Found", message: "")
+                self.ShowOkAlert(title: "Reso", message: (resp as? String) ?? "error")
                 return;
             }
             
