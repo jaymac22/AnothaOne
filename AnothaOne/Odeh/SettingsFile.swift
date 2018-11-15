@@ -21,9 +21,9 @@ class SettingsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        let headerView = view as! UITableViewHeaderFooterView
-        headerView.textLabel?.textColor = UIColor(red: 151.0/255, green: 193.0/255, blue: 100.0/255, alpha: 1)
-        let font = UIFont(name: "Montserrat", size: 18.0)
-        headerView.textLabel?.font = font!
+//        let headerView = view as! UITableViewHeaderFooterView
+//        headerView.textLabel?.textColor = UIColor(red: 151.0/255, green: 193.0/255, blue: 100.0/255, alpha: 1)
+//        let font = UIFont(name: "Montserrat", size: 18.0)
+//        headerView.textLabel?.font = font!
     }
 }

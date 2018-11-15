@@ -46,6 +46,7 @@ class GoogleLoginVC: UIViewController, GIDSignInUIDelegate {
     }
     
     static func didSignInWithGoogleUser(user: GIDGoogleUser) {
+        ServerIndicator.AddIndicator()
         //ServerIndicator.AddIndicator()
         backendless.userService.setStayLoggedIn(true)
         let token = user.authentication.idToken
@@ -54,12 +55,16 @@ class GoogleLoginVC: UIViewController, GIDSignInUIDelegate {
                                         GoogleLoginVC.shared?.didLogin(withUser: user!, GoogleLogin: true);
         },error: { (fault : Fault?) -> Void in
             print("Server reported an error: ","\(fault?.description ?? "error not found")")
-            //ServerIndicator.RemoveIndicator()
+            ServerIndicator.RemoveIndicator()
         })
     }
     
     func didLogin(withUser user: BackendlessUser, GoogleLogin: Bool = false) {
-        
+        print("DID LOGING")
+        let storyboard = UIStoryboard(name: "Settings", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "SettingsStoryBoardID") as! SettingsTableViewController
+        (UIApplication.shared.delegate as! AppDelegate).changeRootViewController(controller)
+        ServerIndicator.RemoveIndicator()
     }
     
 }
