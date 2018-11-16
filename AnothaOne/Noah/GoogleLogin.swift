@@ -11,7 +11,7 @@ class GoogleLoginVC: UIViewController, GIDSignInUIDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(red: 157/255, green: 251/255, blue: 250/255, alpha: 0.7)
+        self.view.backgroundColor = UIColor(red: 157/255, green: 251/255, blue: 250/255, alpha: 0.85)
         GoogleLoginVC.shared = self;
 
         GIDSignIn.sharedInstance().uiDelegate = self

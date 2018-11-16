@@ -5,6 +5,8 @@ import GoogleSignIn
 
 var backendless: Backendless { return Backendless.sharedInstance() }
 
+let statusBarColor: UIColor = UIColor(red: (157*0.85)/255, green: (251*0.85)/255, blue: (250*0.85)/255, alpha: 1)
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     
@@ -23,6 +25,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     static private let GoogleSignIn_KEY = "649839761633-hldb7ntuoggmos9o30uqp1j9neablg4c"
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+        UINavigationBar.appearance().barTintColor = statusBarColor //UIColor.rgb(red: 230, green: 32, blue: 31)
+        
+        let statusBarBackgroundView = UIView()
+        statusBarBackgroundView.backgroundColor = UIColor(red: (157*0.75)/255, green: (251*0.75)/255, blue: (250*0.75)/255, alpha: 1)
+        
+        window?.addSubview(statusBarBackgroundView)
+        window?.addConstraintsWithFormat("H:|[v0]|", views: statusBarBackgroundView)
+        let height = application.statusBarFrame.height
+        window?.addConstraintsWithFormat("V:|[v0(\(height))]", views: statusBarBackgroundView)
         
         backendless.hostURL = AppDelegate.API_URL
         backendless.initApp(AppDelegate.APP_ID, apiKey: AppDelegate.IOS_API)
