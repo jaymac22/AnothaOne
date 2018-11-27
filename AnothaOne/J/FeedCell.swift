@@ -85,7 +85,7 @@ class FeedCell: BaseCell, UICollectionViewDataSource, UICollectionViewDelegate, 
         switch type! {
         case .Home:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: EventCell.cellID, for: indexPath) as! EventCell
-            cell.setTextForEvent(e: EV[indexPath.item])
+            cell.setTextForEvent(e: EV[indexPath.item], canLeave: false)
             return cell
         case .Friends:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FriendCell.cellID, for: indexPath) as! FriendCell
@@ -93,7 +93,7 @@ class FeedCell: BaseCell, UICollectionViewDataSource, UICollectionViewDelegate, 
             return cell
         case .Profile:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: EventCell.cellID, for: indexPath) as! EventCell
-            cell.setTextForEvent(e: EV[indexPath.item])
+            cell.setTextForEvent(e: EV[indexPath.item], canLeave:  true)
             return cell
         }
         
@@ -108,5 +108,19 @@ class FeedCell: BaseCell, UICollectionViewDataSource, UICollectionViewDelegate, 
         return 0
     }
     
+}
+
+class BaseCell: UICollectionViewCell {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupViews()
+    }
     
+    func setupViews() {
+        
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }
