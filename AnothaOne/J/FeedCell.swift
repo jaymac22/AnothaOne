@@ -28,7 +28,7 @@ class FeedCell: BaseCell, UICollectionViewDataSource, UICollectionViewDelegate, 
         
         backgroundColor = .brown
         
-        collectionView.contentInset = .init(top: 58, left: 0, bottom: 0, right: 0)
+        collectionView.contentInset = .init(top: 70, left: 0, bottom: 0, right: 0)
         collectionView.scrollIndicatorInsets = .init(top: 50, left: 0, bottom: 0, right: 0)
         
         addSubview(collectionView)
@@ -44,13 +44,12 @@ class FeedCell: BaseCell, UICollectionViewDataSource, UICollectionViewDelegate, 
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: VideoCell.cellID, for: indexPath) as! VideoCell
-        cell.backgroundColor = index 
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         //let height = (frame.width - 16 - 16) * 9 / 16
-        return .init(width: frame.width, height: 80)
+        return .init(width: frame.width, height: 50 + 16)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
