@@ -25,9 +25,11 @@ class BaseCell: UICollectionViewCell {
 
 class VideoCell: BaseCell {
     
+    static let cellID = "videoID"
+    
     let thumbnailImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "taylor_swift_blank_space")
+        //imageView.image = UIImage(named: "taylor_swift_blank_space")
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         return imageView
@@ -35,9 +37,10 @@ class VideoCell: BaseCell {
     
     let userProfileImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "taylor_swift_profile")
+        //imageView.image = UIImage(named: "taylor_swift_profile")
         imageView.layer.cornerRadius = 22
         imageView.layer.masksToBounds = true
+        imageView.backgroundColor = UIColor.lightGray
         return imageView
     }()
     
@@ -51,6 +54,7 @@ class VideoCell: BaseCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Taylor Swift - Blank Space"
+        label.isUserInteractionEnabled = false;
         return label
     }()
     
@@ -60,6 +64,7 @@ class VideoCell: BaseCell {
         textView.text = "TaylorSwiftVEVO • 1,604,684,607 views • 2 years ago"
         textView.textContainerInset = UIEdgeInsets(top: 0, left: -4, bottom: 0, right: 0)
         textView.textColor = UIColor.lightGray
+        textView.isUserInteractionEnabled = false;
         return textView
     }()
     
@@ -75,7 +80,7 @@ class VideoCell: BaseCell {
         addConstraintsWithFormat("H:|-16-[v0(44)]", views: userProfileImageView)
         
         //vertical constraints
-        addConstraintsWithFormat("V:|-16-[v0]-8-[v1(44)]-16-[v2(1)]|", views: thumbnailImageView, userProfileImageView, separatorView)
+        addConstraintsWithFormat("V:|[v0(0)]-8-[v1(44)]-16-[v2(1)]|", views: thumbnailImageView, userProfileImageView, separatorView)
         
         addConstraintsWithFormat("H:|[v0]|", views: separatorView)
         
