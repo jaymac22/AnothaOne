@@ -9,8 +9,8 @@
 import UIKit
 
 enum Screens:String {
-    case H = "Home", M = "Friends", D = "Account"
-    static var order: [Screens] = [.H,.M,.D]
+    case Home = "Home", Friends = "Friends", Profile = "Account"
+    static var order: [Screens] = [.Home,.Friends,.Profile]
 }
 
 class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
