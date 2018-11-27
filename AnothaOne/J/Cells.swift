@@ -23,26 +23,24 @@ class BaseCell: UICollectionViewCell {
     }
 }
 
-class VideoCell: BaseCell {
+class Friend {
+    var name: String = ""
+    var name2: String = ""
+}
+
+class FriendCell: BaseCell {
     
-    static let cellID = "videoID"
+    static let cellID = "FriendCell"
     
-    let thumbnailImageView: UIImageView = {
-        let imageView = UIImageView()
-        //imageView.image = UIImage(named: "taylor_swift_blank_space")
-        imageView.contentMode = .scaleAspectFill
-        imageView.clipsToBounds = true
-        return imageView
-    }()
+    func setTextForFriend(e: Friend){
+        titleLabel.text = e.name
+        subtitleTextView.text = e.name2
+        self.updateFocusIfNeeded()
+    }
     
-    let userProfileImageView: UIImageView = {
-        let imageView = UIImageView()
-        //imageView.image = UIImage(named: "taylor_swift_profile")
-        imageView.layer.cornerRadius = 22
-        imageView.layer.masksToBounds = true
-        imageView.backgroundColor = UIColor.lightGray
-        return imageView
-    }()
+    let thumbnailImageView: UIImageView = UIImageView()
+    
+    let userProfileImageView: UIImageView = UIImageView()
     
     let separatorView: UIView = {
         let view = UIView()
@@ -50,25 +48,28 @@ class VideoCell: BaseCell {
         return view
     }()
     
-    let titleLabel: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Taylor Swift - Blank Space"
-        label.isUserInteractionEnabled = false;
-        return label
-    }()
+    let titleLabel: UILabel = UILabel()
     
-    let subtitleTextView: UITextView = {
-        let textView = UITextView()
-        textView.translatesAutoresizingMaskIntoConstraints = false
-        textView.text = "TaylorSwiftVEVO • 1,604,684,607 views • 2 years ago"
-        textView.textContainerInset = UIEdgeInsets(top: 0, left: -4, bottom: 0, right: 0)
-        textView.textColor = UIColor.lightGray
-        textView.isUserInteractionEnabled = false;
-        return textView
-    }()
+    let subtitleTextView: UITextView = UITextView()
     
     override func setupViews() {
+        thumbnailImageView.contentMode = .scaleAspectFill
+        thumbnailImageView.clipsToBounds = true
+        
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.isUserInteractionEnabled = false;
+        
+        //userProfileImageView.image = UIImage(named: "taylor_swift_profile")
+        userProfileImageView.layer.cornerRadius = 22
+        userProfileImageView.layer.masksToBounds = true
+        userProfileImageView.backgroundColor = UIColor.lightGray
+        
+        subtitleTextView.translatesAutoresizingMaskIntoConstraints = false
+        //subtitleTextView.text = "TaylorSwiftVEVO • 1,604,684,607 views • 2 years ago"
+        subtitleTextView.textContainerInset = UIEdgeInsets(top: 0, left: -4, bottom: 0, right: 0)
+        subtitleTextView.textColor = UIColor.lightGray
+        subtitleTextView.isUserInteractionEnabled = false;
+        
         addSubview(thumbnailImageView)
         addSubview(separatorView)
         addSubview(userProfileImageView)
@@ -84,8 +85,9 @@ class VideoCell: BaseCell {
         
         addConstraintsWithFormat("H:|[v0]|", views: separatorView)
         
+        titleLabel.bottomAnchor.constraint(equalTo: userProfileImageView.centerYAnchor).isActive = true;
         //top constraint
-        addConstraint(NSLayoutConstraint(item: titleLabel, attribute: .top, relatedBy: .equal, toItem: thumbnailImageView, attribute: .bottom, multiplier: 1, constant: 8))
+//        addConstraint(NSLayoutConstraint(item: titleLabel, attribute: .top, relatedBy: .equal, toItem: thumbnailImageView, attribute: .bottom, multiplier: 1, constant: 8))
         //left constraint
         addConstraint(NSLayoutConstraint(item: titleLabel, attribute: .left, relatedBy: .equal, toItem: userProfileImageView, attribute: .right, multiplier: 1, constant: 8))
         //right constraint
@@ -122,23 +124,12 @@ class EventCell: BaseCell {
         // again convert your date to string
         let myStringafd = formatter.string(from: yourDate!)
         subtitleTextView.text = e.location ?? "" + "\n" + myStringafd
+        self.updateFocusIfNeeded()
     }
     
-    let thumbnailImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
-        imageView.clipsToBounds = true
-        return imageView
-    }()
+    let thumbnailImageView: UIImageView = UIImageView()
     
-    let userProfileImageView: UIImageView = {
-        let imageView = UIImageView()
-        //imageView.image = UIImage(named: "taylor_swift_profile")
-        imageView.layer.cornerRadius = 22
-        imageView.layer.masksToBounds = true
-        imageView.backgroundColor = UIColor.lightGray
-        return imageView
-    }()
+    let userProfileImageView: UIImageView = UIImageView()
     
     let separatorView: UIView = {
         let view = UIView()
@@ -146,24 +137,28 @@ class EventCell: BaseCell {
         return view
     }()
     
-    let titleLabel: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.isUserInteractionEnabled = false;
-        return label
-    }()
+    let titleLabel: UILabel = UILabel()
     
-    let subtitleTextView: UITextView = {
-        let textView = UITextView()
-        textView.translatesAutoresizingMaskIntoConstraints = false
-        //textView.text = "TaylorSwiftVEVO • 1,604,684,607 views • 2 years ago"
-        textView.textContainerInset = UIEdgeInsets(top: 0, left: -4, bottom: 0, right: 0)
-        textView.textColor = UIColor.lightGray
-        textView.isUserInteractionEnabled = false;
-        return textView
-    }()
+    let subtitleTextView: UITextView = UITextView()
     
     override func setupViews() {
+        thumbnailImageView.contentMode = .scaleAspectFill
+        thumbnailImageView.clipsToBounds = true
+        
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.isUserInteractionEnabled = false;
+        
+        //userProfileImageView.image = UIImage(named: "taylor_swift_profile")
+        userProfileImageView.layer.cornerRadius = 22
+        userProfileImageView.layer.masksToBounds = true
+        userProfileImageView.backgroundColor = UIColor.lightGray
+        
+        subtitleTextView.translatesAutoresizingMaskIntoConstraints = false
+        //subtitleTextView.text = "TaylorSwiftVEVO • 1,604,684,607 views • 2 years ago"
+        subtitleTextView.textContainerInset = UIEdgeInsets(top: 0, left: -4, bottom: 0, right: 0)
+        subtitleTextView.textColor = UIColor.lightGray
+        subtitleTextView.isUserInteractionEnabled = false;
+        
         addSubview(thumbnailImageView)
         addSubview(separatorView)
         addSubview(userProfileImageView)
@@ -179,8 +174,9 @@ class EventCell: BaseCell {
         
         addConstraintsWithFormat("H:|[v0]|", views: separatorView)
         
+        titleLabel.bottomAnchor.constraint(equalTo: userProfileImageView.centerYAnchor).isActive = true;
         //top constraint
-        addConstraint(NSLayoutConstraint(item: titleLabel, attribute: .top, relatedBy: .equal, toItem: thumbnailImageView, attribute: .bottom, multiplier: 1, constant: 8))
+//        addConstraint(NSLayoutConstraint(item: titleLabel, attribute: .top, relatedBy: .equal, toItem: thumbnailImageView, attribute: .bottom, multiplier: 1, constant: 8))
         //left constraint
         addConstraint(NSLayoutConstraint(item: titleLabel, attribute: .left, relatedBy: .equal, toItem: userProfileImageView, attribute: .right, multiplier: 1, constant: 10))
         //right constraint

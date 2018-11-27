@@ -22,11 +22,14 @@ private let EV: [Event] = {
     return [a,b,c,d]
 }()
 
-private let P: [BackendlessUser] = {
-    let a = BackendlessUser();let b = BackendlessUser();let c = BackendlessUser();
+private let PV: [Friend] = {
+    let a = Friend();let b = Friend();let c = Friend();
     a.name = "Noah Gomez"
     b.name = "Jethro Arsenal"
     c.name = "Mike Hawk"
+    a.name2 = "No Shared events"
+    b.name2 = "2 Shared Events"
+    c.name2 = "No Shared Events"
     return [a,b,c]
 }()
 
@@ -57,7 +60,7 @@ class FeedCell: BaseCell, UICollectionViewDataSource, UICollectionViewDelegate, 
         addConstraintsWithFormat("H:|[v0]|", views: collectionView)
         addConstraintsWithFormat("V:|[v0]|", views: collectionView)
         
-        collectionView.register(VideoCell.self, forCellWithReuseIdentifier: VideoCell.cellID)
+        collectionView.register(FriendCell.self, forCellWithReuseIdentifier: FriendCell.cellID)
         collectionView.register(EventCell.self, forCellWithReuseIdentifier: EventCell.cellID)
     }
     
@@ -71,7 +74,7 @@ class FeedCell: BaseCell, UICollectionViewDataSource, UICollectionViewDelegate, 
         case .Home:
             return EV.count
         case .Friends:
-            return P.count
+            return PV.count
         case .Profile:
             return 1
         }
@@ -85,7 +88,8 @@ class FeedCell: BaseCell, UICollectionViewDataSource, UICollectionViewDelegate, 
             cell.setTextForEvent(e: EV[indexPath.item])
             return cell
         case .Friends:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: EventCell.cellID, for: indexPath) as! EventCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FriendCell.cellID, for: indexPath) as! FriendCell
+            cell.setTextForFriend(e: PV[indexPath.item])
             return cell
         case .Profile:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: EventCell.cellID, for: indexPath) as! EventCell
