@@ -19,6 +19,7 @@
 		4FF0A75E219DDACF008E3150 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF0A75D219DDACF008E3150 /* API.swift */; };
 		4FF0A761219E40F5008E3150 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF0A75F219E40F4008E3150 /* VideoCell.swift */; };
 		4FF0A762219E40F5008E3150 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF0A760219E40F5008E3150 /* MenuBar.swift */; };
+		4FF4DCB521ACD06200499692 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4DCB421ACD06200499692 /* FeedCell.swift */; };
 		A34744CB2194C72600E3F4FA /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A34744CA2194C72600E3F4FA /* Settings.storyboard */; };
 		A34744CD2194C77200E3F4FA /* SettingsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34744CC2194C77200E3F4FA /* SettingsFile.swift */; };
 		F3CF62B43874CF179B2D7DBC /* Pods_AnothaOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B197C8E29BD6FC835086F37 /* Pods_AnothaOne.framework */; };
@@ -41,6 +42,7 @@
 		4FF0A75D219DDACF008E3150 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		4FF0A75F219E40F4008E3150 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		4FF0A760219E40F5008E3150 /* MenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		4FF4DCB421ACD06200499692 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		58C92E61C588496BA1415741 /* Pods-AnothaOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnothaOne.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnothaOne/Pods-AnothaOne.debug.xcconfig"; sourceTree = "<group>"; };
 		A34744CA2194C72600E3F4FA /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		A34744CC2194C77200E3F4FA /* SettingsFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsFile.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			children = (
 				4F3C17E12194C187006D77BC /* Home.swift */,
 				4FF0A760219E40F5008E3150 /* MenuBar.swift */,
+				4FF4DCB421ACD06200499692 /* FeedCell.swift */,
 				4FF0A75F219E40F4008E3150 /* VideoCell.swift */,
 			);
 			path = J;
@@ -280,6 +283,7 @@
 				4F5D88D92183CC3A00A4A465 /* Ext.swift in Sources */,
 				4FF0A761219E40F5008E3150 /* VideoCell.swift in Sources */,
 				0F22E1AF1E8407D1004B722A /* AppDelegate.swift in Sources */,
+				4FF4DCB521ACD06200499692 /* FeedCell.swift in Sources */,
 				4FF0A762219E40F5008E3150 /* MenuBar.swift in Sources */,
 				4F3C17E02194C106006D77BC /* ServerIndicator.swift in Sources */,
 				4F3C17DE2194BED0006D77BC /* Decider.swift in Sources */,

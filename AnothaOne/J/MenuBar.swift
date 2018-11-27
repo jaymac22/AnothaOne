@@ -2,11 +2,39 @@
 import UIKit
 
 class MenuBar: UIView, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-    
+        
+        var horizontalBarLeftAnchorConstraint: NSLayoutConstraint?
+        var homeController: HomeController?
+        
+        func setupHorizontalBar() {
+            let horizontalBarView = UIView()
+            horizontalBarView.backgroundColor = UIColor(white: 0.95, alpha: 1)
+            horizontalBarView.translatesAutoresizingMaskIntoConstraints = false
+            addSubview(horizontalBarView)
+            
+            horizontalBarLeftAnchorConstraint = horizontalBarView.leftAnchor.constraint(equalTo: self.leftAnchor)
+            horizontalBarLeftAnchorConstraint?.isActive = true
+            
+            horizontalBarView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+            horizontalBarView.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1/3).isActive = true
+            horizontalBarView.heightAnchor.constraint(equalToConstant: 4).isActive = true
+        }
+        
+        func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+            //        print(indexPath.item)
+            //        let x = CGFloat(indexPath.item) * frame.width / 4
+            //        horizontalBarLeftAnchorConstraint?.constant = x
+            //
+            //        UIView.animate(withDuration: 0.75, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+            //            self.layoutIfNeeded()
+            //        }, completion: nil)
+            homeController?.scrollToMenuIndex(menuIndex: indexPath.item)
+        }
+        
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        cv.backgroundColor = statusBarColor//UIColor.rgb(red: 230, green: 32, blue: 31)
+        cv.backgroundColor = statusBarColor //UIColor.rgb(red: 230, green: 32, blue: 31)
         cv.dataSource = self
         cv.delegate = self
         return cv
@@ -26,6 +54,8 @@ class MenuBar: UIView, UICollectionViewDataSource, UICollectionViewDelegate, UIC
         
         let selectedIndexPath = IndexPath(item: 0, section: 0)
         collectionView.selectItem(at: selectedIndexPath, animated: false, scrollPosition: .bottom)
+        
+        setupHorizontalBar()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
