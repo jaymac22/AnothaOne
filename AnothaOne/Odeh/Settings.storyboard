@@ -122,7 +122,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Section-3" id="kYL-9B-E9c">
+                            <tableViewSection headerTitle="Delete Account" id="kYL-9B-E9c">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="51" id="cMX-Gp-eZc">
                                         <rect key="frame" x="0.0" y="385.33333333333337" width="414" height="51"/>
