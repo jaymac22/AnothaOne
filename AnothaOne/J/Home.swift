@@ -23,7 +23,14 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert])
+            { (success, error) in
+                if success {
+                    print("Permission Granted")
+                } else {
+                    print("There was a problem!")
+                }
+            }
         navigationItem.title = Screens.order[0].rawValue
         navigationController?.navigationBar.isTranslucent = false
         

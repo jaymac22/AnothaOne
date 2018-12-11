@@ -62,8 +62,45 @@ class FeedCell: BaseCell, UICollectionViewDataSource, UICollectionViewDelegate, 
         
         collectionView.register(FriendCell.self, forCellWithReuseIdentifier: FriendCell.cellID)
         collectionView.register(EventCell.self, forCellWithReuseIdentifier: EventCell.cellID)
+        collectionView.register(TextCell.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: TextCell.cellID)
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return CGSize(width: self.frame.width, height: 48)
     }
     
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let cell = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: TextCell.cellID, for: indexPath) as! TextCell
+        guard let type = type else {
+            cell.subtitleTextView.text = ""
+            return cell;
+        }
+        switch type {
+        case .Home:
+            cell.subtitleTextView.text = "Featured Events"
+        case .Friends:
+            cell.subtitleTextView.text = "My Friends"
+        case .Profile:
+            if indexPath.section == 0 {
+                cell.subtitleTextView.text = "Events Attending"
+            } else {
+                cell.subtitleTextView.text = "Hosted Events"
+            }
+        }
+        return cell
+    }
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        guard let type = type else {
+            return 0;
+        }
+        switch type {
+        case .Home:
+            return 1
+        case .Friends:
+            return 1
+        case .Profile:
+            return 2
+        }
+    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         guard let type = type else {
@@ -85,7 +122,7 @@ class FeedCell: BaseCell, UICollectionViewDataSource, UICollectionViewDelegate, 
         switch type! {
         case .Home:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: EventCell.cellID, for: indexPath) as! EventCell
-            cell.setTextForEvent(e: EV[indexPath.item], canLeave: false)
+            cell.setTextForEvent(e: EV[indexPath.item], canLeave: false, false)
             return cell
         case .Friends:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FriendCell.cellID, for: indexPath) as! FriendCell
@@ -93,7 +130,7 @@ class FeedCell: BaseCell, UICollectionViewDataSource, UICollectionViewDelegate, 
             return cell
         case .Profile:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: EventCell.cellID, for: indexPath) as! EventCell
-            cell.setTextForEvent(e: EV[indexPath.item], canLeave:  true)
+            cell.setTextForEvent(e: EV[indexPath.item], canLeave:  indexPath.section == 0, indexPath.section == 1)
             return cell
         }
         
