@@ -6,14 +6,16 @@
 //  Copyright © 2018 letsbuildthatapp. All rights reserved.
 //
 
+import UserNotifications
 import UIKit
+
 
 class EventCell: BaseCell {
     
     let JoinButton = UIButton(type: .system)
     static let cellID = "EventCell"
     
-    func setTextForEvent(e: Event, canLeave: Bool){
+    func setTextForEvent(e: Event, canLeave: Bool, _ delete: Bool){
         titleLabel.text = e.title
         let formatter = DateFormatter()
         // initially set the format based on your datepicker date / server String
@@ -29,16 +31,31 @@ class EventCell: BaseCell {
         subtitleTextView.text = e.location ?? "" + "\n" + myStringafd
         self.updateFocusIfNeeded()
         
-        if canLeave {
-            JoinButton.backgroundColor = UIColor.rgb(red: 219, green: 91, blue: 91)
+        JoinButton.backgroundColor = UIColor.rgb(red: 219, green: 91, blue: 91)
+        if delete {
+            JoinButton.setTitle("Cancel", for: .normal)
+            titleLabel.text = "My Event #1"
+            subtitleTextView.text = "My Event Location #1"
+        } else if canLeave {
             JoinButton.setTitle("Leave", for: .normal)
         } else {
             JoinButton.backgroundColor = statusBarColor;
             JoinButton.setTitle("Join", for: .normal)
         }
-        
+        JoinButton.addTarget(self, action: #selector(joinbuttonclicked), for: .touchUpInside)
     }
     
+    @objc private func joinbuttonclicked(sender:UIButton) {
+        let notification = UNMutableNotificationContent()
+        notification.title = "Someone nearby needs ANOTHAONE"
+        notification.subtitle = "6v6 Indoor Soccer"
+        notification.body = "Noah Needs 2 more people"
+        
+        let notificationTrigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let request = UNNotificationRequest(identifier: "notification1", content: notification, trigger: notificationTrigger)
+        
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+    }
     let thumbnailImageView: UIImageView = UIImageView()
     
     let userProfileImageView: UIImageView = UIImageView()
@@ -116,5 +133,31 @@ class EventCell: BaseCell {
         JoinButton.widthAnchor.constraint(equalToConstant: 56).isActive = true;
         JoinButton.titleLabel?.font =  UIFont.boldSystemFont(ofSize: 16)
         JoinButton.titleLabel?.textColor = .white
+    }
+}
+
+
+class TextCell: BaseCell {
+    
+    static let cellID = "TextCell"
+    let subtitleTextView: UITextView = UITextView()
+    
+    let separatorView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor(red: 230/255, green: 230/255, blue: 230/255, alpha: 1)
+        return view
+    }()
+    
+    override func setupViews() {
+        subtitleTextView.translatesAutoresizingMaskIntoConstraints = false
+        subtitleTextView.textColor = UIColor.gray
+        subtitleTextView.isUserInteractionEnabled = false;
+        addSubview(separatorView)
+        addSubview(subtitleTextView)
+        subtitleTextView.font = UIFont.boldSystemFont(ofSize: 16)
+        subtitleTextView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 8).isActive = true;
+        subtitleTextView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -8).isActive = true;
+        subtitleTextView.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1).isActive = true;
+        subtitleTextView.heightAnchor.constraint(equalToConstant: 32).isActive = true;
     }
 }
